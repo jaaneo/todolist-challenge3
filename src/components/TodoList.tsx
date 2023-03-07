@@ -8,8 +8,8 @@ interface Item {
 
 export const TodoList: React.FC = () => {
   const [todos, setTodos] = useState<Item[]>([
-    { id: 1, text: 'Aprende que es un componente', completed: false },
-    { id: 2, text: 'Aprende a crear un componente', completed: true }
+    { id: 1, text: 'Aprende que es un componente', completed: true },
+    { id: 2, text: 'Aprende a crear un componente', completed: false }
   ])  
 
   const [input, setInput] = useState<string>('');
